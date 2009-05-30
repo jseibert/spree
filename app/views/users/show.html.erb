@@ -1,19 +1,23 @@
 <h1><%= t("my_account") %></h1>
-<table>
+<table class="account-summary">
   <tr>
-    <td><%= t("email") %>:</td>
+    <th><%= t("email") %>:</th>
     <td>
       <%= @user.email %>
     </td>
+    <td><%= link_to t('edit'), edit_object_url %></td>
+  </tr>
+  <tr>
+    <th><%= t("password") %>:</th>
+    <td>********</td>
+    <td>(<%= link_to t('change'), edit_object_url %>)</td>
   </tr>
 </table>
-<%= link_to t('edit'), edit_object_url %>
-
-
+ 
+<% unless @orders.empty? %>
 <h1><%= t("my_orders") %></h1>
- 
- 
-<table class="order-summary" width="545">
+
+<table class="order-summary">
   <thead>
     <tr>
       <th><%= t("order_number") %></th>
@@ -35,5 +39,5 @@
   <% end %>
   </tbody>
 </table>
- 
+<% end %>
 <br />
