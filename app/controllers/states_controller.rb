@@ -15,6 +15,8 @@ class StatesController < Spree::BaseController
         next if c.states.empty?
         @state_info[c.id] = c.states.sort.collect {|s| [s.id, s.name] }
       end
+      
+      render :layout => false
     end
   end
 end
