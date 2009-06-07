@@ -19,7 +19,7 @@ $(function() {
     });
   }                          
   //disable submit
-  $('div#checkout :submit').attr('disabled', 'disabled');
+  $('#post-final').attr('disabled', 'disabled');
 
       
   // hookup the radio buttons for registration
@@ -185,7 +185,7 @@ var shift_to_region = function(active) {
     // indicates order is ready to be processed (as opposed to simply updated)
     $("input#final_answer").attr("value", "");
     // disable form submit
-    $('div#checkout :submit').attr('disabled', 'disabled');
+    $('#post-final').attr('disabled', 'disabled');
   }
   return;
 };
