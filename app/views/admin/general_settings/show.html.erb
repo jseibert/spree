@@ -12,6 +12,10 @@
     <td><%=  Spree::Config[:site_url] %></td>
   </tr>
   <tr>
+    <th scope="row"><%= t("google_analytics_id") %>:</th> 
+    <td><%=  Spree::Config[:google_analytics_id] %></td>
+  </tr>
+  <tr>
 	<td colspan="2">
 	  SSL will <%= Spree::Config[:allow_ssl_in_production] ? '' : 'NOT' %> be used in production
 	  mode if necessary.	  		

@@ -11,6 +11,10 @@
   <p>
 	<label><%= t('site_url') %></label>
 	<%= text_field_tag('preferences[site_url]', Spree::Config[:site_url])%>
+  </p>
+  <p>
+	<label><%= t('google_analytics_id') %></label>
+	<%= text_field_tag('preferences[google_analytics_id]', Spree::Config[:google_analytics_id])%>
   </p>	
   <p>
     <label>
