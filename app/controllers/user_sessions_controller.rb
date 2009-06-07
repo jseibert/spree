@@ -1,5 +1,5 @@
 class UserSessionsController < Spree::BaseController
-  before_filter :require_no_user, :only => [:new, :create]
+  before_filter :require_no_user, :only => :new
   before_filter :require_user, :only => :destroy
   ssl_required :new, :create, :destroy, :update
     
@@ -8,8 +8,13 @@ class UserSessionsController < Spree::BaseController
   end
 
   def create
-    @user_session = UserSession.new(params[:user_session])
-    success = @user_session.save 
+    unless current_user
+      @user_session = UserSession.new(params[:user_session])
+      success = @user_session.save 
+    else
+      success = true
+    end
+    
     respond_to do |format|
       format.html {                                
         if success 
