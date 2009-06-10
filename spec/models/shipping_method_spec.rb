@@ -4,7 +4,7 @@ class MockCalculator
   def available?(order)
     true
   end
-  def calculate_shipping(order)
+  def calculate_shipping(order, shipping_method)
     2.5
   end
 end
@@ -48,7 +48,7 @@ describe ShippingMethod do
       it "should use the calculate_shipping method of the specified calculator" do
         @calculator = MockCalculator.new
         MockCalculator.stub!(:new).and_return(@calculator)
-        @calculator.should_receive(:calculate_shipping).with(@order)
+        @calculator.should_receive(:calculate_shipping).with(@order, @shipping_method)
         @shipping_method.calculate_shipping(@order)
       end
       it "should return the correct amount" do

@@ -24,7 +24,7 @@
   <tr>
     <td colspan="3"><b><%= t('shipping') %>:</b> 
       <% if @order.shipment && @order.shipment.shipping_method %>
-        <span id="ship_method">(<%= @order.shipment.shipping_method.name %>)</span>
+        (<span id="ship_method"><%= @order.shipment.shipping_method.name %></span>)
       <% end %>
     </td>
     <td class="total_display"><span id="ship_amount"><%= number_to_currency @order.ship_amount -%></span></td>

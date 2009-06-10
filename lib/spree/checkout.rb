@@ -66,6 +66,7 @@ module Spree::Checkout
           redirect_to order_url(@order, order_params)
         end
         format.js {render :json => { :order_total => number_to_currency(@order.total), 
+                                     :ship_method => @order.shipment.shipping_method.name,
                                      :ship_amount => number_to_currency(@order.ship_amount), 
                                      :tax_amount => number_to_currency(@order.tax_amount),
                                      :available_methods => rate_hash}.to_json,

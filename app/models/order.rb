@@ -172,7 +172,7 @@ class Order < ActiveRecord::Base
     # finalize order totals 
     unless shipment.nil?
       calculator = shipment.shipping_method.shipping_calculator.constantize.new
-      self.ship_amount = calculator.calculate_shipping(shipment) 
+      self.ship_amount = calculator.calculate_shipping(shipment, shipment.shipping_method) 
     else
       self.ship_amount = 0
     end

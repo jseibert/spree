@@ -288,15 +288,13 @@ var update_shipping_methods = function(methods) {
                 .attr('name', 'method_id')
                 .val(this.id)
                 .click(function() { $('div#methods input').attr('checked', ''); $(this).attr('checked', 'checked'); });
-    if($(methods).length == 1) {
-      i.attr('checked', 'checked');
-    }
     var l = $(document.createElement('label'))
                 .attr('for', this.id)
                 .html(s);
     $('div#methods').append($(p).append(i).append(l));
   });
   $('div#methods input:first').attr('validate', 'required:true');
+  $('div#methods input:first').attr('checked', 'checked');
   return;
 };                                     
 
