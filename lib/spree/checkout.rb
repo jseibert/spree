@@ -24,9 +24,17 @@ module Spree::Checkout
     if @order.creditcards.empty?
       @order.creditcards.build(:month => Date.today.month, :year => Date.today.year)
     end
+    
     @shipping_method = ShippingMethod.find_by_id(params[:method_id]) if params[:method_id]  
-    @shipping_method ||= @order.shipping_methods.first    
-    @order.shipments.build(:address => @order.ship_address, :shipping_method => @shipping_method) if @order.shipments.empty?    
+    @shipping_method ||= @order.shipping_methods.first
+    if @order.shipments.empty?
+      @order.shipments.build(:address => @order.ship_address, :shipping_method => @shipping_method)    
+    else
+      @order.shipments.each do |shipment|
+        shipment.shipping_method = @shipping_method
+        shipment.save
+      end
+    end
 
     if request.post?                           
       # @order.creditcards.clear
