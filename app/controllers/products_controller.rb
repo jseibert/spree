@@ -1,6 +1,8 @@
 class ProductsController < Spree::BaseController
+  before_filter(:setup_admin_user) unless RAILS_ENV == "test"
+
   resource_controller
-  helper :taxons
+  helper :taxons  
   before_filter :load_data, :only => :show
   actions :show, :index
 
@@ -17,8 +19,13 @@ class ProductsController < Spree::BaseController
   end
 
   private
-  def load_data
-    
+  def setup_admin_user
+    return if admin_created?
+    flash[:notice] = I18n.t(:please_create_user)
+    redirect_to signup_url
+  end
+  
+  def load_data    
     return unless permalink = params[:taxon_path]
     @taxon = Taxon.find_by_permalink(params[:taxon_path].join("/") + "/")
   end
@@ -35,7 +42,7 @@ class ProductsController < Spree::BaseController
       @search = Product.active.new_search(params[:search])
     end
 
-    @search.per_page = Spree::Config[:products_per_page]
+    @search.per_page ||= Spree::Config[:products_per_page]
     @search.include = :images
 
     @product_cols = 3

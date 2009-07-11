@@ -56,10 +56,9 @@ namespace 'spree' do
     files.exclude 'config/locomotive.yml'
     files.exclude 'config/lighttpd.conf'
     files.exclude 'config/mongrel_mimes.yml'
-    files.exclude 'db/*.db'
+    files.exclude 'db/schema.db'
     files.exclude 'db/*.sqlite3'
     files.exclude 'db/*.sql'
-    files.exclude 'db/*.rb'
     files.exclude /^doc/
     files.exclude 'log/*.log'
     files.exclude 'log/*.pid'
@@ -82,8 +81,13 @@ namespace 'spree' do
       sh "gem uninstall #{PKG_NAME}" rescue nil
     end
 
+    desc "Install the gems needed for testing"
+    task :test_gems do
+      system "rake gems:install RAILS_ENV=test"
+    end
+
     desc "Build and install Gem from source"
-    task :install => [:package, :uninstall] do
+    task :install => [:test_gems, :package, :uninstall] do
       chdir("#{SPREE_ROOT}/pkg") do
         latest = Dir["#{PKG_NAME}-*.gem"].last
         sh "gem install #{latest}"

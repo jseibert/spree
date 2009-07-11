@@ -4,9 +4,9 @@ class Admin::TaxonsController < Admin::BaseController
   before_filter :load_object, :only => [:selected, :available, :remove]
   belongs_to :product
   
-  create.wants.js {render :text => @taxon.to_json()}
-  update.wants.js {render :text => @taxon.name}
-  destroy.wants.js {render :text => ""}
+  create.wants.html {render :text => @taxon.id}
+  update.wants.html {render :text => @taxon.name}
+  destroy.wants.html {render :text => ""}
   
   create.before do 
     @taxon.taxonomy_id = params[:taxonomy_id]

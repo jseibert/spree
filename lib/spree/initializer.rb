@@ -119,6 +119,7 @@ module Spree
 
     def after_initialize
       extension_loader.activate_extensions unless $rails_gem_installer
+      extension_loader.run_initializers #? conds?
       super
     end
 =begin
@@ -148,7 +149,7 @@ module Spree
     def initialize_i18n
       extension_loader.add_locale_paths
       spree_locale_paths = Dir[File.join(SPREE_ROOT, 'config', 'locales', '*.{rb,yml}')]
-			extension_loader.configuration.i18n.load_path.concat(spree_locale_paths)
+      extension_loader.configuration.i18n.load_path = spree_locale_paths + extension_loader.configuration.i18n.load_path
       super
     end
 

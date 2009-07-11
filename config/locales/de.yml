@@ -46,10 +46,8 @@ de:
         ip_address: "IP-Adresse"
         item_total: "Artikel gesamt"
         number: Bestellnummer
-        ship_amount: Versandkosten
         special_instructions: "Spezielle Anmerkungen"
         state: Bundesland
-        tax_amount: Mehrwertsteuer
         total: Gesamt
       product: 
         available_on: "Erhältlich ab"
@@ -58,6 +56,7 @@ de:
         name: Name
         on_hand: verfügbar
         shipping_category: "Shipping Category"
+        tax_category: "Tax Category"
       property: 
         name: Name
         presentation: Darstellung
@@ -68,6 +67,11 @@ de:
       state: 
         abbr: Abkürzung
         name: Name
+      tax_category: 
+        description: Description
+        name: Name
+      tax_rate: 
+        amount: Rate        
       taxon: 
         name: Name
         permalink: Permalink
@@ -132,6 +136,12 @@ de:
       state: 
         one: Bundesland
         other: Bundesländer
+      tax_category: 
+        one: "Tax Category"
+        other: "Tax Categories"
+      tax_rate: 
+        one: "Tax Rate"
+        other: "Tax Rates"        
       taxon: 
         one: Taxon
         other: Taxons
@@ -164,6 +174,7 @@ de:
   allow_backorders: "Lieferrückstand erlauben"
   allow_ssl_to_be_used_when_in_developement_and_test_modes: Allow SSL to be used when in development and test modes
   allow_ssl_to_be_used_when_in_production_mode: Allow SSL to be used in production mode         
+  allowed_ssl_in_production_mode: "SSL will {{not}} be used in production"
   already_registered: Already Registered?
   alternative_phone: Alternative Phone
   amount: Summe
@@ -181,6 +192,7 @@ de:
   available_taxons: "Available Taxons"
   back: Zurück
   back_to_store: "Zurück zum shop"
+  backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: Rechnungsadresse
   billing_address: Rechnungsadresse
   cancel: Verwerfen
@@ -237,6 +249,7 @@ de:
   editing_shipping_method: "Editing Shipping Method"
   editing_state: "Bundesland bearbeiten"
   editing_tax_category: "Steuer-Kategorie bearbeiten"
+  editing_tax_rate: "Editing Tax Rate"
   editing_user: "Benutzer bearbeiten"
   editing_zone: "Zone bearbeiten"
   email: E-Mail
@@ -258,6 +271,7 @@ de:
   first_name: Vorname
   forgot_password: "Forgot Password"
   gateway: Gateway
+  gateway_configuration: "Gateway configuration"
   gateway_error: "Gateway Fehler"
   gateway_setting_description: "Gateway-Einstellungen ändern"
   general: "General"
@@ -274,6 +288,7 @@ de:
   hello_user: "Hallo Benutzer"
   history: History
   home: "Home"
+  icons_by: "Icons by"
   image: Bild
   images: Bilder
   in_progress: "In Bearbeitung"
@@ -294,6 +309,7 @@ de:
   listing_reports: Berichte
   listing_tax_categories: "Listing Tax Categories"
   listing_users: Benutzer
+  loading: Loading
   locale_changed: "Sprache geändert"
   log_in: Anmelden
   logged_in_as: "Angemldet unter"
@@ -333,6 +349,7 @@ de:
   new_state: "Neues Bundesland"
   new_tax_category: "Neue Steuer-Kategorie"
   new_tax_rate: "Neuer Steuersatz"
+  new_taxon: "New Taxon"
   new_taxonomy: "New Taxonomy"
   new_user: "Neuer Benutzer"
   new_variant: "Neue Variante"
@@ -343,6 +360,7 @@ de:
   no_user_found: "No user was found with that email address"
   none: kein
   none_available: "keine verfügbar"
+  not: not
   on_hand: "Auf Lager"
   operation: Operation
   option_Values: "Options Werte"
@@ -380,6 +398,8 @@ de:
   payments: Zahlungen
   phone: Telefon
   place_order: Place Order        
+  please_create_user: "Please create a user account"     
+  powered_by: "Powered by"
   presentation: Anzeige
   previous: zurück
   price: Preis
@@ -390,8 +410,10 @@ de:
   process: Abschicken
   product: Produkt
   product_details: "Produkt Details"
+  product_has_no_description: Product has not description
   product_properties: "Produkt-Eigenschaften"
   products: Produkte
+  products_with_zero_inventory_display: "Products with a zero inventory will {{not}} be displayed"
   properties: "Eigenschaften"
   property: "Eigenschaft"
   prototype: Prototype
@@ -427,6 +449,7 @@ de:
   send_copy_of_orders_mails_to: Send Copy of Order Mails To         
   send_mails_as: Send Mails As                    
   send_order_mails_as: Send Order Mails As   
+  server_error: "The server returned an error"
   ship: ship
   ship_address: Lieferadresse
   shipment: Shipment
@@ -450,6 +473,7 @@ de:
   show_incomplete_orders: "Zeige unvollständige Bestellungen"
   show_only_complete_orders: "Only show complete orders"
   show_out_of_stock_products: "Zeige ausverkaufte Produkte"
+  show_price_inc_vat: "Show price including VAT"
   sign_up: "Anmelden"
   site_name: "Site Name"
   site_url: "Site URL"
@@ -460,10 +484,18 @@ de:
   smtp_mail_host: SMTP Mail Host                       
   smtp_password: SMTP Password
   smtp_port: SMTP Port          
+  smtp_send_all_emails_as_from_following_address: "Send all mails as from the following address."
+  smtp_send_copy_of_orders_to_this_addresses: "Sends a copy of all order's mails to this address. For multiple addresses, separate with commas."
+  smtp_send_copy_to_this_addresses: "Sends a copy of all outgoing mails to this address. For multiple addresses, separate with commas." 
+  smtp_send_order_mails_as_from_following_address: "Send orders mails as from the following address."
   smtp_username: SMTP Username  
   spree:
     date: Datum
     time: Zeit                                               
+  ssl_will_be_used_in_development_and_test_modes: "SSL will be used in development and test mode if necessary."
+  ssl_will_be_used_in_production_mode: "SSL will be used in production mode"
+  ssl_will_not_be_used_in_development_and_test_modes: "SSL will not be used in development and test mode if necessary."
+  ssl_will_not_be_used_in_production_mode: "SSL will not be used in production mode"
   start: Von
   start_date: Valid from
   state: Bundesland
@@ -482,11 +514,18 @@ de:
   tax_categories: ""
   tax_categories_setting_description: ""
   tax_category: ""
+  tax_rates: "Tax Rates"
+  tax_rates_description: Tax rates setup and configuration.
+  tax_settings: "Tax settings"
+  tax_settings_description: Basic tax settings.
   tax_total: "MwSt. Gesamt"
   tax_type: "Tax Type"
   taxon: Taxon
   taxonomies: Taxonomies
   taxonomies_setting_description: "Create and manage taxonomies"
+  taxonomy_edit: "Edit taxonomy"
+  taxonomy_tree_error: "The requested change has not been accepted and the tree has been returned to its previous state, please try again."
+  taxonomy_tree_instruction: "* Right click a child in the tree to access the menu for adding, deleting or sorting a child."
   taxons: Taxons
   thank_you_for_your_order: "Vielen Dank für ihre Bestellung"
   this_file_language: Deutsch
@@ -505,6 +544,7 @@ de:
   update: Speichern
   update_password: "Update my password and log me in"                    
   updated_successfully: "Erfolgreich aktualisiert"
+  updating: Updating
   use_as_shipping_address: Use as Shipping Address
   use_billing_address: Use Billing Address
   use_different_shipping_address: "Andere Lieferaddresse verwenden"
