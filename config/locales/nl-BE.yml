@@ -46,10 +46,8 @@ nl-BE:
         ip_address: "IP Adres"
         item_total: "Product Totaal"
         number: Nummer
-        ship_amount: "Verzendkosten"
         special_instructions: "Bijkomende opmerkingen"
         state: Provincie
-        tax_amount: "BTW bedrag"
         total: Totaal
       product: 
         available_on: "Beschikbaar Op"
@@ -58,6 +56,7 @@ nl-BE:
         name: Naam
         on_hand: "Op Voorraad"
         shipping_category: "Shipping Category"
+        tax_category: "Tax Category"
       property: 
         name: Naam
         presentation: Presentatie
@@ -68,6 +67,11 @@ nl-BE:
       state: 
         abbr: Afkorting
         name: Naam
+      tax_category: 
+        description: Description
+        name: Name
+      tax_rate: 
+        amount: Rate        
       taxon: 
         name: Naam
         permalink: Permalink
@@ -132,6 +136,12 @@ nl-BE:
       state: 
         one: Status
         other: Statussen
+      tax_category: 
+        one: "Tax Category"
+        other: "Tax Categories"
+      tax_rate: 
+        one: "Tax Rate"
+        other: "Tax Rates"        
       taxon: 
         one: Taxon
         other: Taxons
@@ -164,6 +174,7 @@ nl-BE:
   allow_backorders: "Nabestellingen toelaten"
   allow_ssl_to_be_used_when_in_developement_and_test_modes: "SSL gebruik toestaan in ontwikkel- en testomgevingen"
   allow_ssl_to_be_used_when_in_production_mode: "SSL gebruik toestaan in productie-omgeving"         
+  allowed_ssl_in_production_mode: "SSL will {{not}} be used in production"
   already_registered: Already Registered?
   alternative_phone: Alternative Phone
   amount: Bedrag
@@ -181,6 +192,7 @@ nl-BE:
   available_taxons: "Beschikbare taxons"
   back: Terug
   back_to_store: "Verder Winkelen"
+  backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: "Factuuradres"
   billing_address: "Factuuradres"
   cancel: annuleer
@@ -237,6 +249,7 @@ nl-BE:
   editing_shipping_method: "Editing Shipping Method"
   editing_state: "Wijzigen Status"
   editing_tax_category: "Wijzigen BTW categorie"
+  editing_tax_rate: "Editing Tax Rate"
   editing_user: "Gebruiker Wijzigen"   
   editing_zone: "Zone Wijzigen"
   email: E-mail
@@ -258,6 +271,7 @@ nl-BE:
   first_name: "Voornaam"
   forgot_password: "Forgot Password"
   gateway: Gateway
+  gateway_configuration: "Gateway configuration"
   gateway_error: "Gateway Fout"
   gateway_setting_description: "Selecteer een betalings-gateway en stel deze in."
   general: "General"
@@ -274,6 +288,7 @@ nl-BE:
   hello_user: "Hallo Gebruiker"
   history: History
   home: "Home"
+  icons_by: "Icons by"
   image: Afbeelding
   images: Afbeeldingen
   in_progress: "Aan de gang"
@@ -294,6 +309,7 @@ nl-BE:
   listing_reports: "Lijst Rapporten"
   listing_tax_categories: "Lijst BTW categorieën"
   listing_users: "Lijst Gebruikers"
+  loading: Loading
   locale_changed: "Regionale Instellingen Gewijzigd"
   log_in: "Aanmelden"
   logged_in_as: "Aangemeld als"
@@ -333,6 +349,7 @@ nl-BE:
   new_state: "Nieuwe Status"
   new_tax_category: "Nieuwe BTW Categorie"
   new_tax_rate: "Nieuw BTW Tarief"
+  new_taxon: "New Taxon"
   new_taxonomy: "Nieuwe Taxonomie"
   new_user: "Nieuwe Gebruiker"
   new_variant: "Nieuwe Variant"
@@ -343,6 +360,7 @@ nl-BE:
   no_user_found: "No user was found with that email address"
   none: Geen
   none_available: "Niet op voorraad"
+  not: not
   on_hand: "Op voorraad"
   operation: Operatie
   option_Values: "Waarden Opties"
@@ -380,6 +398,8 @@ nl-BE:
   payments: Betalingen
   phone: Telefoon
   place_order: Bestellen
+  please_create_user: "Please create a user account"     
+  powered_by: "Powered by"
   presentation: Presentatie
   previous: vorige
   price: Prijs
@@ -390,8 +410,10 @@ nl-BE:
   process: Verwerking
   product: Product
   product_details: "Product Details"
+  product_has_no_description: Product has not description
   product_properties: "Product Eigenschappen"
   products: Producten
+  products_with_zero_inventory_display: "Products with a zero inventory will {{not}} be displayed"
   properties: Eigenschappen
   property: Eigenschap
   prototype: Prototype
@@ -427,6 +449,7 @@ nl-BE:
   send_copy_of_orders_mails_to: "Zend kopie van bestelmails naar"      
   send_mails_as: "Zend mail als"                    
   send_order_mails_as: "Zend bestelmaild als"
+  server_error: "The server returned an error"
   ship: Verzenden
   ship_address: "Afleveringssadres"
   shipment: Verzending
@@ -450,6 +473,7 @@ nl-BE:
   show_incomplete_orders: "Toon niet afgewerkte bestellingen"
   show_only_complete_orders: "Toon enkel afgewerkte bestellingen"
   show_out_of_stock_products: "Toon producten die niet voorradig zijn"
+  show_price_inc_vat: "Show price including VAT"
   sign_up: "Registreer"
   site_name: "Site Name"
   site_url: "Site URL"
@@ -460,10 +484,18 @@ nl-BE:
   smtp_mail_host: "SMTP Mail Host"
   smtp_password: "SMTP Wachtwoord"
   smtp_port: "SMTP Poort"
+  smtp_send_all_emails_as_from_following_address: "Send all mails as from the following address."
+  smtp_send_copy_of_orders_to_this_addresses: "Sends a copy of all order's mails to this address. For multiple addresses, separate with commas."
+  smtp_send_copy_to_this_addresses: "Sends a copy of all outgoing mails to this address. For multiple addresses, separate with commas." 
+  smtp_send_order_mails_as_from_following_address: "Send orders mails as from the following address."
   smtp_username: "SMTP Gebruikersnaam"
   spree:
     date: Datum
     time: Tijd                                               
+  ssl_will_be_used_in_development_and_test_modes: "SSL will be used in development and test mode if necessary."
+  ssl_will_be_used_in_production_mode: "SSL will be used in production mode"
+  ssl_will_not_be_used_in_development_and_test_modes: "SSL will not be used in development and test mode if necessary."
+  ssl_will_not_be_used_in_production_mode: "SSL will not be used in production mode"
   start: Start
   start_date: Valid from
   state: Status
@@ -482,11 +514,18 @@ nl-BE:
   tax_categories: "BTW Categorieën"
   tax_categories_setting_description: "Instellen BTW categorieën om aan te duiden welke producten onderhevig zijn aan BTW."
   tax_category: "BTW Categorie"
+  tax_rates: "Tax Rates"
+  tax_rates_description: Tax rates setup and configuration.
+  tax_settings: "Tax settings"
+  tax_settings_description: Basic tax settings.
   tax_total: "BTW Totaal"
   tax_type: "BTW Type"
   taxon: Taxon
   taxonomies: Taxonomieën
   taxonomies_setting_description: "Aanmaken en wijzigen taxonomieën"
+  taxonomy_edit: "Edit taxonomy"
+  taxonomy_tree_error: "The requested change has not been accepted and the tree has been returned to its previous state, please try again."
+  taxonomy_tree_instruction: "* Right click a child in the tree to access the menu for adding, deleting or sorting a child."
   taxons: Taxons
   thank_you_for_your_order: "Hartelijk dank voor uw bestelling. U kan deze pagina afdrukken als bewijs van bestelling."
   this_file_language: "Nederlands (BE)"
@@ -505,6 +544,7 @@ nl-BE:
   update: Updaten
   update_password: "Update my password and log me in"                    
   updated_successfully: "Succesvol Aangepast"
+  updating: Updating
   use_as_shipping_address: "Gebruik als afleveringsadres"
   use_billing_address: "Gebruik als factuuradres"
   use_different_shipping_address: "Ander afleveringsadres gebruiken"
