@@ -3,7 +3,7 @@ class ShippingMethod < ActiveRecord::Base
 
   def calculate_shipping(shipment)
     return 0 unless zone.include?(shipment.address)
-    return shipping_calculator.constantize.new.send(:calculate_shipping, shipment, self)
+    return shipping_calculator.constantize.new.send(:calculate_shipping, shipment)
   end   
   
   def available?(order)
