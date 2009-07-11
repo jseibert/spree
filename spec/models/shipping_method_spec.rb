@@ -48,15 +48,9 @@ describe ShippingMethod do
       end
       it "should use the calculate_shipping method of the specified calculator" do
         @calculator = MockCalculator.new
-<<<<<<< HEAD:spec/models/shipping_method_spec.rb
-        MockCalculator.stub!(:new).and_return(@calculator)
-        @calculator.should_receive(:calculate_shipping).with(@order, @shipping_method)
-        @shipping_method.calculate_shipping(@order)
-=======
         MockCalculator.stub!(:new, :return => @calculator)
         @calculator.should_receive(:calculate_shipping).with(@shipment)
         @shipping_method.calculate_shipping(@shipment)
->>>>>>> railsdog/master:spec/models/shipping_method_spec.rb
       end
       it "should return the correct amount" do
         @shipping_method.calculate_shipping(@shipment).should == 2.5
