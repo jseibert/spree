@@ -25,7 +25,9 @@ class Zone < ActiveRecord::Base
     include?(address)  
   end
       
-  def include?(address)        
+  def include?(address)
+    return false if address.nil?
+         
     # NOTE: This is complicated by the fact that include? for HMP is broken in Rails 2.1 (so we use awkward index method)
     case self.kind
     when "country"
