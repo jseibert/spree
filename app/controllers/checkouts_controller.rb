@@ -42,8 +42,8 @@ class CheckoutsController < Spree::BaseController
   update.before do
     if params[:checkout]
       # prevent double creation of addresses if user is jumping back to address stup without refreshing page
-      params[:checkout][:bill_address_attributes][:id] = @checkout.bill_address.id if @checkout.bill_address
-      params[:checkout][:ship_address_attributes][:id] = @checkout.ship_address.id if @checkout.ship_address
+      params[:checkout][:bill_address_attributes][:id] = @checkout.bill_address.id if @checkout.bill_address && params[:checkout][:bill_address_attributes]
+      params[:checkout][:ship_address_attributes][:id] = @checkout.ship_address.id if @checkout.ship_address && params[:checkout][:ship_address_attributes]
     end
     @checkout.ip_address ||= request.env['REMOTE_ADDR']
     @checkout.email = current_user.email if current_user && @checkout.email.blank?
