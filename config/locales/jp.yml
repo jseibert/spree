@@ -171,6 +171,7 @@ jp:
   address_information: 住所情報
   adjustment: 調整
   administration: 管理
+  all: "All"
   allow_backorders: 取り寄せ注文を許可する
   allow_ssl_to_be_used_when_in_developement_and_test_modes: Allow SSL to be used when in development and test modes
   allow_ssl_to_be_used_when_in_production_mode: Allow SSL to be used in production mode
@@ -216,6 +217,7 @@ jp:
   configuration_options: 設定オプション
   configurations: 設定
   confirm: 確認
+  confirm_delete: "Confirm Deletion"
   confirm_password: "Password Confirmation"
   continue: 続ける
   continue_shopping: ショッピングを続ける
@@ -291,6 +293,7 @@ jp:
   icons_by: "Icons by"
   image: 画像
   images: 画像
+  images_for: "Images for"
   in_progress: "In Progress"
   invalid_search: "Invalid search criteria."
   inventory: 在庫
@@ -529,6 +532,7 @@ jp:
   taxons: 分類
   thank_you_for_your_order: "Thank you for your business.  Please print out a copy of this confirmation page for your records."
   this_file_language: "Japanese"
+  thumbnail: "Thumbnail"
   to_add_variants_you_must_first_define: "To add variants, you must first define"
   total: 小計
   tracking: Tracking

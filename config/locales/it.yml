@@ -171,6 +171,7 @@ it:
   address_information: "Informazione indirizzo"
   adjustment: Adeguamento
   administration: Amministrazione
+  all: "All"
   allow_backorders: "Allow Backorders"
   allow_ssl_to_be_used_when_in_developement_and_test_modes: Allow SSL to be used when in development and test modes
   allow_ssl_to_be_used_when_in_production_mode: Allow SSL to be used in production mode         
@@ -216,6 +217,7 @@ it:
   configuration_options: "Configuration Options"
   configurations: Configurations
   confirm: Confermare
+  confirm_delete: "Confirm Deletion"
   confirm_password: "Confermare Password"
   continue: Continue
   continue_shopping: "Continuare l'acquisto"
@@ -291,6 +293,7 @@ it:
   icons_by: "Icons by"
   image: Imagine
   images: Imagini
+  images_for: "Images for"
   in_progress: "In Progress"
   invalid_search:
   inventory: Magazzino
@@ -529,6 +532,7 @@ it:
   taxons: Taxons
   thank_you_for_your_order: "Thank you for your business.  Please print out a copy of this confirmation page for your records."
   this_file_language: Italian
+  thumbnail: "Thumbnail"
   to_add_variants_you_must_first_define: "To add variants, you must first define"
   total: Totale
   tracking: Tracking

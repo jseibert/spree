@@ -25,9 +25,12 @@ class ProductsController < Spree::BaseController
     redirect_to signup_url
   end
   
-  def load_data    
+  def load_data  
+	    load_object  
+		@selected_variant = @product.variants.detect { |v| v.in_stock || Spree::Config[:allow_backorders] }
+		
     return unless permalink = params[:taxon_path]
-    @taxon = Taxon.find_by_permalink(params[:taxon_path].join("/") + "/")
+    @taxon = Taxon.find_by_permalink(params[:taxon_path].join("/") + "/")	 
   end
   
   def collection
@@ -43,7 +46,7 @@ class ProductsController < Spree::BaseController
     end
 
     @search.per_page ||= Spree::Config[:products_per_page]
-    @search.include = :images
+    @search.include = {:variants => :images}
 
     @product_cols = 3
     @products ||= @search.all

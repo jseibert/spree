@@ -171,6 +171,7 @@ de-CH:
   address_information: "Adress-Information"
   adjustment: Anpassung
   administration: Verwaltung
+  all: "All"
   allow_backorders: "Lieferrückstand erlauben"
   allow_ssl_to_be_used_when_in_developement_and_test_modes: "SSL in den Modi 'development' und 'test' erlauben"
   allow_ssl_to_be_used_when_in_production_mode: "SSL im Modus 'production' erlauben"
@@ -216,6 +217,7 @@ de-CH:
   configuration_options: "Konfigurations-Optionen"
   configurations: Konfigurationen
   confirm: Bestätigen
+  confirm_delete: "Confirm Deletion"
   confirm_password: "Passwort Bestätigen"
   continue: Weitermachen
   continue_shopping: "Weiter Einkaufen"
@@ -291,6 +293,7 @@ de-CH:
   icons_by: "Icons by"
   image: Bild
   images: Bilder
+  images_for: "Images for"
   in_progress: "In Bearbeitung"
   invalid_search: "Ungültige Suche"
   inventory: Lager
@@ -529,6 +532,7 @@ de-CH:
   taxons: Taxons
   thank_you_for_your_order: "Vielen Dank für ihre Bestellung"
   this_file_language: Deutsch (Schweiz)
+  thumbnail: "Thumbnail"
   to_add_variants_you_must_first_define: "To add variants, you must first define"
   total: Gesamt
   tracking: Tracking
