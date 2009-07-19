@@ -171,6 +171,7 @@ pt-PT:
   address_information: "Informação de Morada"
   adjustment: Acerto
   administration: Administração
+  all: "All"
   allow_backorders: "Allow Backorders"
   allow_ssl_to_be_used_when_in_developement_and_test_modes: Allow SSL to be used when in development and test modes
   allow_ssl_to_be_used_when_in_production_mode: Allow SSL to be used in production mode         
@@ -216,6 +217,7 @@ pt-PT:
   configuration_options: "Opções de Configuração"
   configurations: Configurações
   confirm: Confirme
+  confirm_delete: "Confirm Deletion"
   confirm_password: "Confirmação da palavra passe"
   continue: Continue
   continue_shopping: "Continue a sua compra"
@@ -291,6 +293,7 @@ pt-PT:
   icons_by: "Icons by"
   image: Imagem
   images: Imagens
+  images_for: "Images for"
   in_progress: "Em Progresso"
   invalid_search: "Procura Inválida"
   inventory: Inventário
@@ -529,6 +532,7 @@ pt-PT:
   taxons: Taxons
   thank_you_for_your_order: "Obrigado por sua compra. Por favor, imprima uma cópia desta página de confirmação para seu controle."
   this_file_language: "Português"
+  thumbnail: "Thumbnail"
   to_add_variants_you_must_first_define: "To add variants, you must first define"
   total: Total
   tracking: Tracking

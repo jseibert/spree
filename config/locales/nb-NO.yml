@@ -171,6 +171,7 @@ nb-NO:
   address_information: "Adresseinformasjon"
   adjustment: Justering
   administration: Administrasjon
+  all: "All"
   allow_backorders: "Tillat restordre"
   allow_ssl_to_be_used_when_in_developement_and_test_modes: Tillat at SSL brukes i utviklings- og testmodus.
   allow_ssl_to_be_used_when_in_production_mode: Tillat at SSL brukes i produksjonsmodus.
@@ -216,6 +217,7 @@ nb-NO:
   configuration_options: "Konfigurasjonsvalg"
   configurations: Konfigurasjoner
   confirm: Bekreft
+  confirm_delete: "Confirm Deletion"
   confirm_password: "Bekreft passord"
   continue: Fortsett
   continue_shopping: "Fortsett å handle"
@@ -291,6 +293,7 @@ nb-NO:
   icons_by: "Icons by"
   image: Bilde
   images: Bilder
+  images_for: "Images for"
   in_progress: "Pågår"
   invalid_search: "Ugyldig søkekriterie."
   inventory: Varelager
@@ -529,6 +532,7 @@ nb-NO:
   taxons: Klasser
   thank_you_for_your_order: "Takk for bestillingen. Vennligst skriv ut og ta vare på denne bekreftelsen."
   this_file_language: "Norsk"
+  thumbnail: "Thumbnail"
   to_add_variants_you_must_first_define: "To add variants, you must first define"
   total: Total
   tracking: Sporing

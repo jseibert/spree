@@ -171,6 +171,7 @@ nl-BE:
   address_information: "Adresgegevens"
   adjustment: Aanpassing
   administration: Administratie
+  all: "All"
   allow_backorders: "Nabestellingen toelaten"
   allow_ssl_to_be_used_when_in_developement_and_test_modes: "SSL gebruik toestaan in ontwikkel- en testomgevingen"
   allow_ssl_to_be_used_when_in_production_mode: "SSL gebruik toestaan in productie-omgeving"         
@@ -216,6 +217,7 @@ nl-BE:
   configuration_options: "Configuratie Opties"
   configurations: Configuraties
   confirm: Bevestig
+  confirm_delete: "Confirm Deletion"
   confirm_password: "Wachtwoord bevestiging"
   continue: "Ga Verder"
   continue_shopping: "Verder Winkelen"
@@ -291,6 +293,7 @@ nl-BE:
   icons_by: "Icons by"
   image: Afbeelding
   images: Afbeeldingen
+  images_for: "Images for"
   in_progress: "Aan de gang"
   invalid_search: "Foute zoekcriteria."
   inventory: Voorraad
@@ -529,6 +532,7 @@ nl-BE:
   taxons: Taxons
   thank_you_for_your_order: "Hartelijk dank voor uw bestelling. U kan deze pagina afdrukken als bewijs van bestelling."
   this_file_language: "Nederlands (BE)"
+  thumbnail: "Thumbnail"
   to_add_variants_you_must_first_define: "To add variants, you must first define"
   total: Totaal
   tracking: Tracking
