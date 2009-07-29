@@ -35,7 +35,7 @@ class Checkout < ActiveRecord::Base
     if shipping_method
       ship_charge = order.shipping_charges.first
       ship_charge ||= order.shipping_charges.build    
-      ship_charge.amount = shipping_method.calculate_shipping(Shipment.new(:order => order, :address => ship_address))
+      ship_charge.amount = shipping_method.calculate_shipping(Shipment.new(:order => order, :address => ship_address, :shipping_method => shipping_method))
       ship_charge.description = "#{I18n.t(:shipping)} (#{shipping_method.name})" 
       ship_charge.save
     end

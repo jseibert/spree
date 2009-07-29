@@ -71,6 +71,7 @@ class CheckoutsController < Spree::BaseController
   def rate_hash       
     fake_shipment = Shipment.new :order => @order, :address => @order.ship_address
     @order.shipping_methods.collect do |ship_method| 
+      fake_shipment.shipping_method = ship_method
       { :id   => ship_method.id, 
         :name => ship_method.name, 
         :rate => number_to_currency(ship_method.calculate_shipping(fake_shipment)) }
