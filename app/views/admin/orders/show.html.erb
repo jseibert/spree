@@ -9,7 +9,7 @@
 
 <% if @order.bill_address %>
   <div class='adr'>
-    <h4><%= link_to t("bill_address"), edit_admin_order_creditcard_payment_url(@order, @order.creditcard_payments.last) %></h4>
+    <h4><%= link_to( t("bill_address"), edit_admin_order_creditcard_payment_url(@order, @order.creditcard_payments.last)) if @order.creditcard_payments.last %></h4>
     <%= render :partial => 'admin/shared/address', :locals => {:address => @order.bill_address} %>      
   </div>
 <% end %>                   
