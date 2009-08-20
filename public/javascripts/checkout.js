@@ -199,6 +199,9 @@ var build_address = function(region) {
   var address = "";
   address += $('p#' + region + 'fname input').val() + ' ' + $('p#' + region + 'lname input').val() + '<br />';
   address += $('p#' + region + 'address input').val() + '<br />';
+  if($('p#' + region + 'organization input').val() != '') {
+    address += $('p#' + region + 'organization input').val() + '<br />';
+  }
   if($('p#' + region + 'address2 input').val() != '') {
     address += $('p#' + region + 'address2 input').val() + '<br />';
   }

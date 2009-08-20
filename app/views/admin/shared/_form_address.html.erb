@@ -13,13 +13,20 @@
     </div>
   </div>
   <p>
+    <label><%= t("organization_name") %></label>
+    <div class="sub-field">
+      <%= address_form.label :organization_name, t("organization_name") %><br />
+      <%= address_form.text_field :organization_name, :class => 'fullwidth' %>
+    </div>
+  </p>
+  <p>
     <label><%= t("address") %></label>
     <div class="sub-field">
       <%= address_form.label :address1, t("street_address") %><br />
       <%= address_form.text_field :address1, :class => 'fullwidth' %>
     </div>
     <div class="sub-field">
-      <%= address_form.label :address2, t("street_address") %><br />
+      <%= address_form.label :address2, t("street_address_2") %><br />
       <%= address_form.text_field :address2, :class => 'fullwidth' %>
     </div>
   </p>

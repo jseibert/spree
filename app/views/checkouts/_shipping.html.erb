@@ -10,6 +10,10 @@
   		<label for="<%= t("last_name") %>"><%= t("last_name") %></label>
   		<%= ship_form.text_field :lastname, :class => 'required' -%><span class="req">*</span>
   	</p>
+  	<p id="sorganization">
+  		<label for="<%= t("organization_name") %>"><%= t("organization_name") %></label>
+  		<%= ship_form.text_field :organization_name -%>
+  	</p>
   	<p id="saddress">
   		<label for="<%= t("street_address") %>"><%= t("street_address") %></label>
   		<%= ship_form.text_field :address1, :class => 'required' -%><span class="req">*</span>
