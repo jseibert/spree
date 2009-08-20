@@ -24,7 +24,7 @@
   <tbody id="order-charges">
     <% order.charges.each do |charge| %>
       <tr class="total">
-        <td colspan="3"><strong><%= charge.description %></strong></td>
+        <td colspan="3"><strong><%= charge.description %>:</strong></td>
         <td class="total_display"><span><%= number_to_currency charge.amount -%></span></td>
       </tr>
     <% end %>
@@ -32,7 +32,7 @@
   <tbody id="order-credits">
     <% order.credits.each do |credit| %>
       <tr class="total">
-        <td colspan="3"><%= credit.description %></td>
+        <td colspan="3"><%= credit.description %>:</td>
         <td class="total_display"><span><%= number_to_currency credit.amount -%></span></td>
       </tr>
     <% end %>

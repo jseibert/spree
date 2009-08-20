@@ -22,6 +22,7 @@ en-US:
         city: City
         firstname: "First Name"
         lastname: "Last Name"
+        organization_name: "Organization"
         phone: Phone
         zipcode: "Zip Code"
       country: 
@@ -384,6 +385,7 @@ en-US:
   order_total_message: "The total amount charged to your card will be"
   order_updated: "Order Updated"
   orders: Orders
+  organization_name: "Organization"
   out_of_stock: "Out of Stock"
   overview: Overview
   paid: Paid
