@@ -1,6 +1,7 @@
 class OrdersController < Spree::BaseController     
     prepend_before_filter :reject_unknown_order
-  before_filter :prevent_editing_complete_order, :only => [:edit, :update, :checkout]            
+  before_filter :prevent_editing_complete_order, :only => [:edit, :update, :checkout]     
+  before_filter :prevent_updating_complete_order, :only => [:create, :update]       
 
   ssl_required :show
 
@@ -76,5 +77,12 @@ class OrdersController < Spree::BaseController
   def prevent_editing_complete_order      
     load_object
     redirect_to object_url if @order.checkout_complete
-  end         
+  end  
+  
+  def prevent_updating_complete_order
+    load_object
+    session[:order_id] = nil if @order.checkout_complete
+    @object = nil
+    load_object
+  end       
 end
