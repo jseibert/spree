@@ -196,6 +196,8 @@ nl-BE:
   backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: "Factuuradres"
   billing_address: "Factuuradres"
+  calculator: Calculator
+  calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: annuleer
   canceled: Geannuleerd
   capture: "in rekening brengen"
@@ -207,11 +209,15 @@ nl-BE:
   category: Categorie
   change: Wijzig
   change_language: "Taalkeuze"
+  charge_total: Charge Total
   charged: Aangere
   checkout: Bestelling
   city: Stad
+  code: Code
+  combine: Combine
   comp_order: "Afgebroken order"
   comp_order_confirmation: "De klant wordt niets aangerekend. Ben je zeker dat je het order wil onderbreken?"
+  complete: complete
   complete_list: "Complete List"
   configuration: Configuratie
   configuration_options: "Configuratie Opties"
@@ -224,6 +230,10 @@ nl-BE:
   copy_all_mails_to: "Kopieer Alle Mails Naar"
   country: Land
   country_based: "Gebaseerd op land"
+  coupon: Coupon                                                                             
+  coupon_code: Coupon Code
+  coupons: Coupons
+  coupons_description: Manage coupons
   create: Aanmaken
   create_a_new_account: "Maak een nieuwe account aan"
   create_user_account: Create User Account
@@ -231,6 +241,7 @@ nl-BE:
   credit_card: "Kredietkaart"
   credit_card_capture_complete: "Aanrekening via kredietkaart voltooid"
   credit_card_payment: "Kredietkaart Betaling"
+  credit_total: Credit Total
   creditcard: Kredietkaart
   current: Huidige
   customer: Klant
@@ -242,6 +253,7 @@ nl-BE:
   display: Weergeven
   edit: Wijzig
   editing_category: "Wijzig Categorie"
+  editing_coupon: Editing Coupon
   editing_option_type: "Optie Type Wijzigen"
   editing_option_types: "Optie Types Wijzigen"
   editing_product: "Product Wijzigen"
@@ -249,6 +261,7 @@ nl-BE:
   editing_prototype: "Prototype Wijzigen"
   editing_shipping_category: "Editing Shipping Category"
   editing_shipping_method: "Editing Shipping Method"
+  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Wijzigen Status"
   editing_tax_category: "Wijzigen BTW categorie"
   editing_tax_rate: "Editing Tax Rate"
@@ -259,6 +272,7 @@ nl-BE:
   email_server_settings_description: "E-mail server installen."
   empty_cart: "Winkelmandje leegmaken"
   enable_mail_delivery: "Mail aflevering aanzetten"
+  enable_mail_queue: "Enable Mail Queue"
   enter_exactly_as_shown_on_card: Please enter exactly as shown on the card
   error: fout
   event: Gebeurtenis
@@ -271,7 +285,13 @@ nl-BE:
   filename: Bestandsnaam
   final_confirmation: "Definitieve bevestiging"
   first_name: "Voornaam"
+  flat_percent: Flat Percent
+  flat_rate_amount: Amount
+  flat_rate_per_item: "Flat Rate (per item)"
+  flat_rate_per_order: "Flat Rate (per order)"
+  flexible_rate: "Flexible Rate"
   forgot_password: "Forgot Password"
+  full_name: "Full Name"
   gateway: Gateway
   gateway_configuration: "Gateway configuration"
   gateway_error: "Gateway Fout"
@@ -325,6 +345,8 @@ nl-BE:
   maestro_or_solo_cards: Maestro/Solo cards
   mail_delivery_enabled: "Mail aflevering aangezet"
   mail_delivery_not_enabled: "Mail aflevering afgezet"
+  mail_queue_enabled: "Mail queue is enabled"
+  mail_queue_not_enabled: "Mail queue is not enabled (emails are delivered immediately)"
   mail_server_preferences: "Mail server Instellingen"
   mail_server_settings: "Mail server Instellingen"
   mark_shipped: "Mark Shipped"
@@ -338,6 +360,7 @@ nl-BE:
   name: Naam
   new: Nieuw
   new_category: "Nieuwe categorie"
+  new_coupon: New Coupon
   new_credit_card_payment: "Nieuwe Kredietkaart betaling"
   new_customer: "Nieuwe Klant"
   new_image: "Niewe Afbeelding"
@@ -349,6 +372,7 @@ nl-BE:
   new_shipment: "Nieuwe Verzending"
   new_shipping_category: "New Shipping Category"
   new_shipping_method: "New Shipping Method"
+  new_shipping_rate: New Shipping Rate
   new_state: "Nieuwe Status"
   new_tax_category: "Nieuwe BTW Categorie"
   new_tax_rate: "Nieuw BTW Tarief"
@@ -358,6 +382,7 @@ nl-BE:
   new_variant: "Nieuwe Variant"
   new_zone: "Nieuwe Zone"
   next: Volgende
+  no: "No"
   no_items_in_cart: "Geen producten in Winkelmandje"
   no_match_found: "Geen gelijke gevonden"
   no_user_found: "No user was found with that email address"
@@ -380,6 +405,7 @@ nl-BE:
   order_number: "Nummer Bestelling"
   order_operation_authorize: Autoriseren
   order_processed_successfully: "Uw bestelling is succesvol verwerkt"
+  order_summary: Order Summary
   order_total: "Bestelling Totaal"
   order_total_message: "Het aan te rekenen totaalbedrag is"
   order_updated: "Bestelling gewijzigd"
@@ -438,6 +464,7 @@ nl-BE:
   return: Terugzenden
   returned: Teruggezonden
   roles: Rollen
+  sales_tax: "Sales Tax"
   sales_total: "Omzet"
   sales_total_for_all_orders: "Omzet voor alle bestellingen"
   sales_totals: "Omzet"
@@ -453,6 +480,7 @@ nl-BE:
   send_mails_as: "Zend mail als"                    
   send_order_mails_as: "Zend bestelmaild als"
   server_error: "The server returned an error"
+  settings: Settings
   ship: Verzenden
   ship_address: "Afleveringssadres"
   shipment: Verzending
@@ -460,15 +488,17 @@ nl-BE:
   shipped: Verzonden
   shipping: Aflevering
   shipping_address: "Afleveringsadres"
-  shipping_calculator: Calculator
   shipping_categories: "Shipping Categories"
   shipping_categories_description: "Manage shipping categories to identify which products can be shipped via which method"
+  shipping_category: Shipping Category
   shipping_cost: Cost
   shipping_error: "Fout met aflevering"
   shipping_instructions: "Shipping Instructions"
   shipping_method: "Verzendingsmethode"
   shipping_methods: "Shipping Methods"
   shipping_methods_description: "Manage shipping methods"
+  shipping_rates: "Shipping Rates"
+  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Verzending"
   shop_by_taxonomy: "Shop by {{taxonomy}}"
   shopping_cart: "Winkelmandje"
@@ -549,6 +579,7 @@ nl-BE:
   update_password: "Update my password and log me in"                    
   updated_successfully: "Succesvol Aangepast"
   updating: Updating
+  usage_limit: Usage Limit
   use_as_shipping_address: "Gebruik als afleveringsadres"
   use_billing_address: "Gebruik als factuuradres"
   use_different_shipping_address: "Ander afleveringsadres gebruiken"
@@ -558,6 +589,7 @@ nl-BE:
   users: Gebruikers
   value: Waarde
   variants: Varianten
+  vat: "VAT"           
   version: Versie
   website: Website
   weight: Gewicht
@@ -567,6 +599,7 @@ nl-BE:
   whats_this: "Wat is dit"
   width: Breedte
   year: "Year"
+  yes: "Yes"
   you_have_been_logged_out: "You have been logged out."
   your_cart_is_empty: "Uw winkelmandje is leeg"
   zip: Postcode

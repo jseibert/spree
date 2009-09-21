@@ -1,10 +1,4 @@
 --- 
-zone_members_030: 
-  zoneable_id: "213"
-  created_at: 2009-06-04 17:22:41
-  updated_at: 2009-06-04 17:22:41
-  zone_id: "284254445"
-  zoneable_type: Country
 zone_members_019: 
   zoneable_id: "162"
   created_at: 2009-06-04 13:22:26
@@ -125,12 +119,6 @@ zone_members_004:
   updated_at: 2009-06-04 13:22:26
   zone_id: "1"
   zoneable_type: Country
-zone_members_027: 
-  zoneable_id: "212"
-  created_at: 2009-06-04 17:22:41
-  updated_at: 2009-06-04 17:22:41
-  zone_id: "284254445"
-  zoneable_type: Country
 zone_members_016: 
   zoneable_id: "117"
   created_at: 2009-06-04 13:22:26
@@ -147,7 +135,7 @@ zone_members_028:
   zoneable_id: "214"
   created_at: 2009-06-04 17:22:41
   updated_at: 2009-06-04 17:22:41
-  zone_id: "690863446"
+  zone_id: "2"
   zoneable_type: Country
 zone_members_017: 
   zoneable_id: "125"
@@ -165,7 +153,7 @@ zone_members_029:
   zoneable_id: "35"
   created_at: 2009-06-04 17:22:41
   updated_at: 2009-06-04 17:22:41
-  zone_id: "690863446"
+  zone_id: "2"
   zoneable_type: Country
 zone_members_018: 
   zoneable_id: "142"
