@@ -39,7 +39,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :states, :only => :index
   map.resources :users
   map.resources :products, :member => {:change_image => :post}
-  map.resources :addresses
   map.resources :orders, :member => {:address_info => :get}, :has_many => [:line_items, :creditcards, :creditcard_payments], :has_one => :checkout
   map.resources :orders, :member => {:fatal_shipping => :get} do |order|
     order.resources :shipments, :member => {:shipping_method => :get}
@@ -54,7 +53,8 @@ ActionController::Routing::Routes.draw do |map|
   #this route maybe removed in the near future (no longer used by core)
   map.resources :taxons
   
-  map.namespace :admin do |admin|
+  map.namespace :admin do |admin|          
+    admin.resources :coupons
     admin.resources :zones
     admin.resources :users
     admin.resources :countries, :has_many => :states
@@ -86,8 +86,10 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :shipments
     admin.resources :shipping_methods
     admin.resources :shipping_categories
+    admin.resources :shipping_rates
     admin.resources :tax_rates
-    admin.resource  :tax_settings      
+    admin.resource  :tax_settings    
+    admin.resources :calculators
   end                   
 
   

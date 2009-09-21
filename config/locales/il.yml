@@ -79,7 +79,7 @@ il:
       taxonomy: 
         name: Name
       user: 
-        email: Email
+        email: דואל
       variant: 
         depth: Depth
         height: Height
@@ -194,24 +194,30 @@ il:
   back: Back
   back_to_store: "Go Back To Store"
   backordering_is_allowed: "Backordering {{not}} allowed"
-  bill_address: "Bill Address"
+  bill_address: "כתובת למשלוח חבילה"
   billing_address: "כתובת למשלוח חשבונית"
+  calculator: Calculator
+  calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: cancel
   canceled: Canceled
   capture: capture
   card_code: "קוד כרטיס"
   card_number: "מספר כרטיס"
-  card_type_is: Card type is
+  card_type_is: "כרטיס מסוג"
   cart: עגלה
   categories: Categories
   category: Category
   change: Change
   change_language: "שנה שפה"
+  charge_total: Charge Total
   charged: Charged
   checkout: תשלום
   city: עיר
+  code: Code
+  combine: Combine
   comp_order: "Comp Order"
   comp_order_confirmation: "Customer will not be charged.  Are you sure you want to comp this order?"
+  complete: complete
   complete_list: "Complete List"
   configuration: Configuration
   configuration_options: "Configuration Options"
@@ -224,13 +230,18 @@ il:
   copy_all_mails_to: Copy All Mails To                                                                             
   country: ארץ
   country_based: "Country Based"
+  coupon: Coupon                                                                             
+  coupon_code: Coupon Code
+  coupons: Coupons
+  coupons_description: Manage coupons
   create: Create
   create_a_new_account: "Create a new account"
-  create_user_account: Create User Account
-  created_successfully: "Created Successfully"
+  create_user_account: "יצירת חשבון משתמש"
+  created_successfully: "נוצר בהצלחה"
   credit_card: "Credit Card"
   credit_card_capture_complete: "Credit Card Was Captured"
   credit_card_payment: "Credit Card Payment"
+  credit_total: Credit Total
   creditcard: Creditcard
   current: Current
   customer: Customer
@@ -242,6 +253,7 @@ il:
   display: Display
   edit: Edit
   editing_category: "Editing Category"
+  editing_coupon: Editing Coupon
   editing_option_type: "Editing Option Type"
   editing_option_types: "Editing Option Types"
   editing_product: "Editing Product"
@@ -249,29 +261,37 @@ il:
   editing_prototype: "Editing Prototype"
   editing_shipping_category: "Editing Shipping Category"
   editing_shipping_method: "Editing Shipping Method"
+  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Editing State"
   editing_tax_category: "Editing Tax Category"
   editing_tax_rate: "Editing Tax Rate"
   editing_user: "Editing User"   
   editing_zone: "Editing Zone"
-  email: Email
-  email_address: "Email Address"
+  email: דואל
+  email_address: "כתובת דואל"
   email_server_settings_description: "Set email server settings."
   empty_cart: "רוקן עגלה"
   enable_mail_delivery: Enable Mail Delivery      
+  enable_mail_queue: "Enable Mail Queue"
   enter_exactly_as_shown_on_card: Please enter exactly as shown on the card
   error: error
   event: Event
-  existing_customer: "Existing Customer"
+  existing_customer: "משתמש קיים"
   expiration: "תאריך תפוגה"
-  expiration_month: "Expiration Month"
-  expiration_year: "Expiration Year"
+  expiration_month: "חודש תפוגה"
+  expiration_year: "שנת תפוגה"
   extension: Extension
   extensions: Extensions
   filename: Filename
   final_confirmation: "Final Confirmation"
   first_name: "שם פרטי"
-  forgot_password: "Forgot Password"
+  flat_percent: Flat Percent
+  flat_rate_amount: Amount
+  flat_rate_per_item: "Flat Rate (per item)"
+  flat_rate_per_order: "Flat Rate (per order)"
+  flexible_rate: "Flexible Rate"
+  forgot_password: "שכחתי סיסמה"
+  full_name: "Full Name"
   gateway: Gateway
   gateway_configuration: "Gateway configuration"
   gateway_error: "Gateway Error"
@@ -302,7 +322,7 @@ il:
   inventory_settings: "Inventory Settings"
   issue_number: Issue Number
   item: פריט
-  item_description: "Item Description"
+  item_description: "תיאור הפריט"
   item_total: "Item Total"
   last_name: "שם משפחה"
   list: List
@@ -313,7 +333,7 @@ il:
   listing_tax_categories: "Listing Tax Categories"
   listing_users: "Listing Users"
   loading: Loading
-  locale_changed: "Locale Changed"
+  locale_changed: "שינוי שפה"
   log_in: "התחברות"
   logged_in_as: "Logged in as"
   logged_in_succesfully: "Logged in successfully"
@@ -325,6 +345,8 @@ il:
   maestro_or_solo_cards: Maestro/Solo cards
   mail_delivery_enabled: "Mail delivery is enabled"
   mail_delivery_not_enabled: "Mail delivery is not enabled"
+  mail_queue_enabled: "Mail queue is enabled"
+  mail_queue_not_enabled: "Mail queue is not enabled (emails are delivered immediately)"
   mail_server_preferences: Mail Server Preferences
   mail_server_settings: "Mail Server Settings"
   mark_shipped: "Mark Shipped"
@@ -338,6 +360,7 @@ il:
   name: Name
   new: New
   new_category: "New category"
+  new_coupon: New Coupon
   new_credit_card_payment: "New Credit Card Payment"
   new_customer: "New Customer"
   new_image: "New Image"
@@ -349,6 +372,7 @@ il:
   new_shipment: "New Shipment"
   new_shipping_category: "New Shipping Category"
   new_shipping_method: "New Shipping Method"
+  new_shipping_rate: New Shipping Rate
   new_state: "New State"
   new_tax_category: "New Tax Category"
   new_tax_rate: "New Tax Rate"
@@ -358,6 +382,7 @@ il:
   new_variant: "New Variant"
   new_zone: "New Zone"
   next: Next
+  no: "No"
   no_items_in_cart: ""
   no_match_found: "No Match Found"
   no_user_found: "No user was found with that email address"
@@ -380,6 +405,7 @@ il:
   order_number: Order
   order_operation_authorize: Authorize
   order_processed_successfully: "Your order has been processed successfully"
+  order_summary: Order Summary
   order_total: "סכום כולל"
   order_total_message: "The total amount charged to your card will be"
   order_updated: "Order Updated"
@@ -388,8 +414,8 @@ il:
   overview: Overview
   paid: Paid
   parent_category: "Parent Category"
-  password: Password
-  password_reset_instructions: "Password Reset Instructions"
+  password: סיסמה
+  password_reset_instructions: "הוראות לחידוש סיסמה"
   password_reset_instructions_are_mailed: "Instructions to reset your password have been emailed to you. Please check your email."
   password_reset_token_not_found: "We're sorry, but we could not locate your account. If you are having issues try copying and pasting the URL from your email into your browser or restarting the reset password process."    
   password_updated: "Password successfully updated"  
@@ -409,7 +435,7 @@ il:
   problem_authorizing_card: "Problem authorizing credit card"
   problem_capturing_card: "Problem capturing credit card"
   problems_processing_order: "We had problems processing your order"
-  proceed_as_guest: "No Thanks, Proceed as Guest"
+  proceed_as_guest: "לא תודה, המשך כאורח"
   process: Process
   product: Product
   product_details: "Product Details"
@@ -423,13 +449,13 @@ il:
   prototypes: Prototypes
   qty: כמות
   rate: Rate
-  register: Register as a New User
-  register_or_guest: Checkout as Guest or Register
-  registration: Registration           
-  remember_me: "Remember me"
-  remove: Remove
-  reports: Reports
-  required_for_solo_and_maestro: Required for Solo and Maestro cards.
+  register: "הרשם כמשתמש חדש"
+  register_or_guest: "שלם כאורח או הרשם כמשתמש"
+  registration: הרשמה           
+  remember_me: "זכור אותי"
+  remove: הסר
+  reports: דוחות
+  required_for_solo_and_maestro: "חובה עבור כרטיסי סולו ומאסטרו."
   resend: Resend
   reset_password: "Reset my password"
   response_code: "Response Code"  
@@ -438,6 +464,7 @@ il:
   return: return
   returned: Returned
   roles: Roles
+  sales_tax: "Sales Tax"
   sales_total: "Sales Total"
   sales_total_for_all_orders: "Sales total for all orders"
   sales_totals: "Sales Totals"
@@ -453,22 +480,25 @@ il:
   send_mails_as: Send Mails As                    
   send_order_mails_as: Send Order Mails As   
   server_error: "The server returned an error"
+  settings: Settings
   ship: ship
-  ship_address: "Ship Address"
+  ship_address: "כתובת למשלוח חבילה"
   shipment: Shipment
   shipment_number: "Shipment #"
   shipped: Shipped
   shipping: משלוח
   shipping_address: "כתובת למשלוח חבילה"
-  shipping_calculator: Calculator
   shipping_categories: "Shipping Categories"
   shipping_categories_description: "Manage shipping categories to identify which products can be shipped via which method"
+  shipping_category: Shipping Category
   shipping_cost: Cost
   shipping_error: "Shipping Error"
   shipping_instructions: "Shipping Instructions"
   shipping_method: אופן המשלוח
   shipping_methods: "Shipping Methods"
   shipping_methods_description: "Manage shipping methods"
+  shipping_rates: "Shipping Rates"
+  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Shipping Total"
   shop_by_taxonomy: "הצג לפי {{taxonomy}}"
   shopping_cart: "עגלת קניות"
@@ -549,6 +579,7 @@ il:
   update_password: "Update my password and log me in"                    
   updated_successfully: "Updated Successfully"
   updating: Updating
+  usage_limit: Usage Limit
   use_as_shipping_address: Use as Shipping Address
   use_billing_address: זהה לכתובת למשלוח חשבונית
   use_different_shipping_address: "Use Different Shipping Address"
@@ -558,6 +589,7 @@ il:
   users: Users
   value: Value
   variants: Variants
+  vat: "VAT"           
   version: Version
   website: Website
   weight: Weight
@@ -567,6 +599,7 @@ il:
   whats_this: "מה זה"
   width: Width
   year: "Year"
+  yes: "Yes"
   you_have_been_logged_out: "You have been logged out."
   your_cart_is_empty: "Your cart is empty"
   zip: מיקוד

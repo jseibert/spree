@@ -196,6 +196,8 @@ es:
   backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: "Dirección de facturación"
   billing_address: "Dirección de facturación"
+  calculator: Calculator
+  calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: Cancelar
   canceled: Cancelado
   capture: captura
@@ -207,11 +209,15 @@ es:
   category: Categoría
   change: Cambiar
   change_language: "Cambiar Idioma"
+  charge_total: Charge Total
   charged: Cargado
   checkout: Pagar
   city: Ciudad
+  code: Code
+  combine: Combine
   comp_order: "Pedido completado"
   comp_order_confirmation: "Confirmacion de pedido completado"
+  complete: complete
   complete_list: "Complete List"
   configuration: Configuracion
   configuration_options: "Opciones de configuracion"
@@ -224,6 +230,10 @@ es:
   copy_all_mails_to: Copiar todos los correos a
   country: País
   country_based: "Pais base"
+  coupon: Coupon                                                                             
+  coupon_code: Coupon Code
+  coupons: Coupons
+  coupons_description: Manage coupons
   create: Crear
   create_a_new_account: "Crear una nueva cuenta"
   create_user_account: Create User Account
@@ -231,6 +241,7 @@ es:
   credit_card: "Tarjeta de credito"
   credit_card_capture_complete: "La tarjeta de credito ha sido registrada"
   credit_card_payment: "Pago con tarjeta de credito"
+  credit_total: Credit Total
   creditcard: "Tarjeta de credito"
   current: Actual
   customer: Cliente
@@ -242,6 +253,7 @@ es:
   display: Mostrar
   edit: Editar
   editing_category: "Editando categoría"
+  editing_coupon: Editing Coupon
   editing_option_type: "Editando tipo de opción"
   editing_option_types: "Editando tipos de opción"
   editing_product: "Editando Producto"
@@ -249,6 +261,7 @@ es:
   editing_prototype: "Editando Prototipo"
   editing_shipping_category: "Editando Categoria de envío"
   editing_shipping_method: "Editando metodo de envío"
+  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Editando provincia"
   editing_tax_category: "Editando Categoría fiscal"
   editing_tax_rate: "Editing Tax Rate"
@@ -259,6 +272,7 @@ es:
   email_server_settings_description: "Configuración del servidor de correo electrónico"
   empty_cart: "Vaciar Cesta"
   enable_mail_delivery: Habilitar envio por correo      
+  enable_mail_queue: "Enable Mail Queue"
   enter_exactly_as_shown_on_card: Please enter exactly as shown on the card
   error: error
   event: Evento
@@ -271,7 +285,13 @@ es:
   filename: "Nombre de archivo"
   final_confirmation: "Confirmación Final"
   first_name: Nombre
+  flat_percent: Flat Percent
+  flat_rate_amount: Amount
+  flat_rate_per_item: "Flat Rate (per item)"
+  flat_rate_per_order: "Flat Rate (per order)"
+  flexible_rate: "Flexible Rate"
   forgot_password: "¿Olvidaste tu contraseña?"
+  full_name: "Full Name"
   gateway: "pasarela"
   gateway_configuration: "Gateway configuration"
   gateway_error: "Error en la pasarela"
@@ -325,6 +345,8 @@ es:
   maestro_or_solo_cards: Maestro/Solo cards
   mail_delivery_enabled: "La entrega de correo está habilitada"
   mail_delivery_not_enabled: "La entrega de correo está deshabilitada"
+  mail_queue_enabled: "Mail queue is enabled"
+  mail_queue_not_enabled: "Mail queue is not enabled (emails are delivered immediately)"
   mail_server_preferences: Preferencias del servidor de correo
   mail_server_settings: "Configuración del servidor de correo"
   mark_shipped: "Marcar como enviado"
@@ -338,6 +360,7 @@ es:
   name: Nombre
   new: Nuevo
   new_category: "Nueva categoría"
+  new_coupon: New Coupon
   new_credit_card_payment: "Nuevo pago con tarjeta de credito"
   new_customer: "Nuevo cliente"
   new_image: "Nueva Imágen"
@@ -349,6 +372,7 @@ es:
   new_shipment: "Nuevo envio"
   new_shipping_category: "Nueva categoria de envio"
   new_shipping_method: "Nueva forma de envio"
+  new_shipping_rate: New Shipping Rate
   new_state: "Nueva provincia"
   new_tax_category: "Nueva categoría"
   new_tax_rate: "Nuevo iipo impositivo"
@@ -358,6 +382,7 @@ es:
   new_variant: "Nueva Variante"
   new_zone: "Nueva zona"
   next: próximo
+  no: "No"
   no_items_in_cart: "La cesta está vacía"
   no_match_found: "No se ha encontrado"
   no_user_found: "No se ha encontrado ningun usuario con esa direccion de correo"
@@ -380,6 +405,7 @@ es:
   order_number: "Pedido #"
   order_operation_authorize: "Autorizar"
   order_processed_successfully: "Su pedido se ha procesado correctamente"
+  order_summary: Order Summary
   order_total: "Total del pedido"
   order_total_message: "El importe total cargado a su tarjeta sera"
   order_updated: "Pedido actualizado"
@@ -438,6 +464,7 @@ es:
   return: volver
   returned: regresó
   roles: Funciones
+  sales_tax: "Sales Tax"
   sales_total: "Total de ventas"
   sales_total_for_all_orders: "Total de ventas para todos los pedidos"
   sales_totals: "Ventas Totales"
@@ -453,6 +480,7 @@ es:
   send_mails_as: Enviar correos como
   send_order_mails_as: Enviar correos de pedidos como
   server_error: "The server returned an error"
+  settings: Settings
   ship: enviar
   ship_address: "Direccion de envio"
   shipment: Envio
@@ -460,15 +488,17 @@ es:
   shipped: Enviado
   shipping: Envío
   shipping_address: "Dirección de envío"
-  shipping_calculator: Calculadora
   shipping_categories: "Categorias de envio"
   shipping_categories_description: "Gestionar las categorias de envio para determinar qué categorías de productos pueden ser transportados a través de qué método"
+  shipping_category: Shipping Category
   shipping_cost: Costes de envio
   shipping_error: "Error de envio"
   shipping_instructions: "Shipping Instructions"
   shipping_method: Metodo de envio
   shipping_methods: "Metodos de envio"
   shipping_methods_description: "Manejar metodos de envio"
+  shipping_rates: "Shipping Rates"
+  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Total de envío"
   shop_by_taxonomy: "Comprar por {{taxonomy}}"
   shopping_cart: "Cesta de compras"
@@ -549,6 +579,7 @@ es:
   update_password: "Actualiza mi contraseña y dejame entrar"                    
   updated_successfully: "Actualizado correctamente"
   updating: Updating
+  usage_limit: Usage Limit
   use_as_shipping_address: Usar como direccion de envio
   use_billing_address: Usar la direccion de facturacion
   use_different_shipping_address: "Usar una dirección de envío diferente"
@@ -558,6 +589,7 @@ es:
   users: Usuarios
   value: "valor"
   variants: Variantes
+  vat: "VAT"           
   version: Versión
   website: "Página web"
   weight: Peso
@@ -567,6 +599,7 @@ es:
   whats_this: "¿Qué es esto?"
   width: Ancho
   year: "Año"
+  yes: "Yes"
   you_have_been_logged_out: "Se ha cerrado la sesión."
   your_cart_is_empty: "Su cesta está vacía"
   zip: "Código postal"

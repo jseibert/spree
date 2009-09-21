@@ -196,6 +196,8 @@ fr-FR:
   backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: "Adresse facturée"
   billing_address: "Adresse de facturation"
+  calculator: Calculator
+  calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: annulé
   canceled: Annulé
   capture: accepté
@@ -207,11 +209,15 @@ fr-FR:
   category: Categorie
   change: Changer
   change_language: "Changer la langue"
+  charge_total: Charge Total
   charged: Débité
   checkout: Procéder au paiement
   city: Ville
+  code: Code
+  combine: Combine
   comp_order: "Commande complète"
   comp_order_confirmation: "Le client n'a pas été débité.  Êtes-vous sûr de vouloir valider cette commande ?"
+  complete: complete
   complete_list: "Complete List"
   configuration: Configuration
   configuration_options: "Option configuration"
@@ -224,6 +230,10 @@ fr-FR:
   copy_all_mails_to: Copier tous les emails à
   country: Pays
   country_based: "Country Based"
+  coupon: Coupon                                                                             
+  coupon_code: Coupon Code
+  coupons: Coupons
+  coupons_description: Manage coupons
   create: Créer
   create_a_new_account: "Créer un nouveau compte"
   create_user_account: Create User Account
@@ -231,6 +241,7 @@ fr-FR:
   credit_card: "Carte de crédit"
   credit_card_capture_complete: "La carte de crédit a été acceptée"
   credit_card_payment: "Paiement par carte de crédit"
+  credit_total: Credit Total
   creditcard: Carte de crédit
   current: Actuellement
   customer: Client
@@ -242,6 +253,7 @@ fr-FR:
   display: Afficher
   edit: Editer
   editing_category: "Edition de la catégorie"
+  editing_coupon: Editing Coupon
   editing_option_type: "Edition du type d'option"
   editing_option_types: "Edition des types d'options"
   editing_product: "Edition du produit"
@@ -249,6 +261,7 @@ fr-FR:
   editing_prototype: "Edition du prototype"
   editing_shipping_category: "Editing Shipping Category"
   editing_shipping_method: "Editing Shipping Method"
+  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Edition de la région"
   editing_tax_category: "Edition de la catégorie de taxe"
   editing_tax_rate: "Editing Tax Rate"
@@ -259,6 +272,7 @@ fr-FR:
   email_server_settings_description: "Définir les paramètres email du serveur."
   empty_cart: "Panier vide"
   enable_mail_delivery: Activation de la distribution des emails
+  enable_mail_queue: "Enable Mail Queue"
   enter_exactly_as_shown_on_card: Please enter exactly as shown on the card
   error: erreur
   event: Evenements
@@ -271,7 +285,13 @@ fr-FR:
   filename: Nom du fichier
   final_confirmation: "Confirmation finale"
   first_name: "Prenom"
+  flat_percent: Flat Percent
+  flat_rate_amount: Amount
+  flat_rate_per_item: "Flat Rate (per item)"
+  flat_rate_per_order: "Flat Rate (per order)"
+  flexible_rate: "Flexible Rate"
   forgot_password: "Forgot Password"
+  full_name: "Full Name"
   gateway: Passerelle
   gateway_configuration: "Gateway configuration"
   gateway_error: "Erreur de la passerelle"
@@ -325,6 +345,8 @@ fr-FR:
   maestro_or_solo_cards: Maestro/Solo cards
   mail_delivery_enabled: "Distribution des emails activée"
   mail_delivery_not_enabled: "Distribution des emails est désactivée"
+  mail_queue_enabled: "Mail queue is enabled"
+  mail_queue_not_enabled: "Mail queue is not enabled (emails are delivered immediately)"
   mail_server_preferences: Préférence du serveur de messagerie
   mail_server_settings: "Paramètres du serveur de messagerie"
   mark_shipped: "Mark Shipped"
@@ -338,6 +360,7 @@ fr-FR:
   name: Nom
   new: Nouveau
   new_category: "Nouvelle categorie"
+  new_coupon: New Coupon
   new_credit_card_payment: "Nouveau mode de paiement par carte de crédit"
   new_customer: "Nouveau client"
   new_image: "Nouvelle image"
@@ -349,6 +372,7 @@ fr-FR:
   new_shipment: "Nouvelle expédition"
   new_shipping_category: "New Shipping Category"
   new_shipping_method: "New Shipping Method"
+  new_shipping_rate: New Shipping Rate
   new_state: "Nouvelle région"
   new_tax_category: "Nouvelle catégorie de taxes"
   new_tax_rate: "Nouvelle taxe"
@@ -358,6 +382,7 @@ fr-FR:
   new_variant: "Nouvelle gamme"
   new_zone: "Nouvelle zone"
   next: Suivant
+  no: "No"
   no_items_in_cart: ""
   no_match_found: "Aucune correspondance trouvée"
   no_user_found: "No user was found with that email address"
@@ -380,6 +405,7 @@ fr-FR:
   order_number: Commande
   order_operation_authorize: Authorisation
   order_processed_successfully: "Votre commande a bien été traitée avec succès"
+  order_summary: Order Summary
   order_total: "Total de la commande"
   order_total_message: "Le total du montant débité sur votre carte va être de"
   order_updated: "Commande mise à jour"
@@ -438,6 +464,7 @@ fr-FR:
   return: retourner
   returned: Retourner
   roles: Rôles
+  sales_tax: "Sales Tax"
   sales_total: "Total de ventes"
   sales_total_for_all_orders: "Total des ventes pour toutes les commandes"
   sales_totals: "Total des ventes"
@@ -453,6 +480,7 @@ fr-FR:
   send_mails_as: Envoyer des mails en tant que
   send_order_mails_as: Envoyer des commandes email en tant que
   server_error: "The server returned an error"
+  settings: Settings
   ship: livraison
   ship_address: "Adresse de livraison"
   shipment: Livraison
@@ -460,15 +488,17 @@ fr-FR:
   shipped: Livré
   shipping: Frais de livraison
   shipping_address: "Adresse de livraison"
-  shipping_calculator: Calculator
   shipping_categories: "Shipping Categories"
   shipping_categories_description: "Manage shipping categories to identify which products can be shipped via which method"
+  shipping_category: Shipping Category
   shipping_cost: Cost
   shipping_error: "Erreur de livraison"
   shipping_instructions: "Shipping Instructions"
   shipping_method: "Méthode de livraison"
   shipping_methods: "Shipping Methods"
   shipping_methods_description: "Manage shipping methods"
+  shipping_rates: "Shipping Rates"
+  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Total de la livraison"
   shop_by_taxonomy: "Shop by {{taxonomy}}"
   shopping_cart: "Panier"
@@ -549,6 +579,7 @@ fr-FR:
   update_password: "Update my password and log me in"                    
   updated_successfully: "Mise à jour effectuée avec succès"
   updating: Updating
+  usage_limit: Usage Limit
   use_as_shipping_address: Use as Shipping Address
   use_billing_address: Use Billing Address
   use_different_shipping_address: "Utiliser une adresse de facturation différente"
@@ -558,6 +589,7 @@ fr-FR:
   users: Utilisateurs
   value: Valeur
   variants: Gammes
+  vat: "VAT"           
   version: Version
   website: Site Web
   weight: Poids
@@ -567,6 +599,7 @@ fr-FR:
   whats_this: "Qu'est ce que"
   width: Largeur
   year: "Year"
+  yes: "Yes"
   you_have_been_logged_out: "You have been logged out."
   your_cart_is_empty: "Votre panier est vide"
   zip: Code postal

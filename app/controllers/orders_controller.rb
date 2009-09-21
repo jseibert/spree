@@ -1,5 +1,5 @@
 class OrdersController < Spree::BaseController     
-    prepend_before_filter :reject_unknown_order
+  prepend_before_filter :reject_unknown_object
   before_filter :prevent_editing_complete_order, :only => [:edit, :update, :checkout]     
   before_filter :prevent_updating_complete_order, :only => [:create, :update]       
 
@@ -44,11 +44,17 @@ class OrdersController < Spree::BaseController
 
   #override r_c default b/c we don't want to actually destroy, we just want to clear line items
   def destroy
+    flash[:notice] = I18n.t(:basket_successfully_cleared)
     @order.line_items.clear
-    respond_to do |format| 
-      format.html { redirect_to(edit_object_url) } 
-    end
-  end  
+    @order.update_totals!
+    after :destroy
+    set_flash :destroy
+    response_for :destroy
+  end
+
+  destroy.response do |wants|
+    wants.html { redirect_to(edit_object_url) } 
+  end
   
   def can_access?
     return true unless order = load_object    
@@ -65,14 +71,6 @@ class OrdersController < Spree::BaseController
     return Order.find_by_number(params[:id]) if params[:id]
     find_order
   end   
-  
-  def reject_unknown_order
-    load_object
-    if (@order.nil?)
-      flash[:error] = t('order_not_in_system')
-      redirect_to products_path
-    end
-  end         
   
   def prevent_editing_complete_order      
     load_object

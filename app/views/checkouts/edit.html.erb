@@ -1,5 +1,5 @@
 <% content_for :head do %>
-  <%= javascript_include_tag 'checkout' %>
+  <%= javascript_include_tag 'checkout', '/states' %>
 <% end %>
 <div id="checkout">
   <h1><%= t("checkout")%></h1>
@@ -8,3 +8,6 @@
     <input id="post-final" type="submit" style="display:none"/>
   <% end %>
 </div>
+<div id="checkout-summary">
+  <%= render 'summary' %>
+</div>  
