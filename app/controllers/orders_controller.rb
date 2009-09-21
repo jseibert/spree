@@ -1,8 +1,8 @@
 class OrdersController < Spree::BaseController     
-  prepend_before_filter :reject_unknown_object
-  before_filter :prevent_editing_complete_order, :only => [:edit, :update, :checkout]     
-  before_filter :prevent_updating_complete_order, :only => [:create, :update]       
-
+  prepend_before_filter :reject_unknown_object,  :only => [:show, :edit, :update, :checkout]
+  before_filter :prevent_editing_complete_order, :only => [:edit, :update, :checkout]            
+  before_filter :prevent_updating_complete_order, :only => [:create, :update]
+  
   ssl_required :show
 
   resource_controller
