@@ -1,5 +1,5 @@
 ---
-ru-RU:
+ru-RU: 
   a_copy_of_all_mail_will_be_sent_to_the_following_addresses: "Копии всех писем будут отосланы на следующие адреса"
   abbreviation: "Аббревиатура"
   access_denied: "Доступ запрещен"
@@ -167,6 +167,7 @@ ru-RU:
   add_state: "Добавить субъект федерации"
   add_to_cart: "Добавить в корзину"
   add_zone: "Добавить зону"
+  additional_item: Additional Item Cost
   address: "Адрес"
   address_information: "Адресная информация"
   adjustment: "Поправка(Adjustment)"
@@ -284,6 +285,7 @@ ru-RU:
   extensions: "Расширения"
   filename: "Имя файла"
   final_confirmation: "Окончательное подтверждение"
+  first_item: First Item Cost
   first_name: "Имя"
   flat_percent: "Фиксированный процент"
   flat_rate_amount: "Сумма фиксированной ставки"
@@ -351,6 +353,7 @@ ru-RU:
   mail_server_settings: "Установки почтового сервера"
   mark_shipped: "Отметить как доставленный"
   master_price: "Основная цена"
+  max_items: Max Items
   meta_description: "Описание"
   meta_keywords: "Ключевые слова"
   metadata: "Метаданные"
@@ -412,6 +415,8 @@ ru-RU:
   orders: "Заказы"
   out_of_stock: "Нет в наличии"
   overview: "Обзор"
+  page_only_viewable_when_logged_in: You attempted to visit a page which can only be viewed when you are logged in
+  page_only_viewable_when_logged_out: You attempted to visit a page which can only be viewed when you are logged out
   paid: "Оплачен"
   parent_category: "Родительская категория"
   password: "Пароль"
