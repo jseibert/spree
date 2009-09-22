@@ -1,6 +1,7 @@
 class UsersController < Spree::BaseController
   resource_controller
   
+  before_filter :default_object_to_current_user, :only => [:show, :edit, :update]
   before_filter :require_no_user, :only => [:new, :create]
   before_filter :require_user, :only => [:show, :edit, :update]
   before_filter :initialize_extension_partials
@@ -36,5 +37,10 @@ class UsersController < Spree::BaseController
       render :action => :edit
     end
   end
+  
+  protected
+    def default_object_to_current_user
+     @object = object || current_user
+    end
 
 end
