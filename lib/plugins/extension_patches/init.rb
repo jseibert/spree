@@ -3,6 +3,5 @@
 #######################################################################################################
 
 require 'routing_extension'
-require 'mailer_hack'
 require 'fixture_loading_extension' if RAILS_ENV == 'test'
 require 'asset_copy'
